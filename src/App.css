@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --primary-color:#C87573;
+  --secoendry:#ef6367;
+  --color3:#fff5f2;
+  --color4:#f3eed9;
+  --secondary-text:#45505b;
+}
+/*sidenav bar*/
+.side-nav{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 50vh;
+  position: fixed;
+  align-items: flex-start;
+  padding-left: 25px;
+  justify-content: space-evenly;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.navBTN{
+  font-weight: 300 !important;
+  width: 50px;
+  background-color: var(--color4) !important;
+  color: var(--secondary-text) !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+   width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    padding: 0 0 0 9px !important;
+}
+.navBTN-text {
+  opacity: 0;
+  width: 0;
+  transition: all 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navBTN:hover .navBTN-text {
+  opacity: 1;
+  width: auto;
+}
+.navBTN:hover{
+  background-color: var(--primary-color) !important;
+    color: white !important;
+    float: left !important;
+    width: 120px !important;
+  border-radius: 60px !important;
+visibility: visible;
+}
+/*home*/
+.home{
+  background-image: url(./assets/workplace-items-marble-table-view.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.home::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #48005e42; 
+}
+.homeBox{
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: max-content;
+  z-index: 1;
+}
+#myName{
+  color: white;
+  font-size: 5rem;
+}
+.homeBox2{
+  padding:15px;
+  display:flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.icon{
+  color: white;
+  font-size: 1.75rem !important;
+}
+
+.typer{
+  width:max-content;
+}
+/*about*/
+.about{
+  width: 80%;
+  height: 70vh;
+  margin:5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.about h2{
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+.about-span{
+  color: var(--secondary-text);
+  width: 80%;
+  margin: 0 auto !important;
+  font-size:1.25rem !important;
+  line-height: 1.25;
+  padding: 25px;
+}
+.about-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.about-img{
+  width:50%;
+  height: 50vh;
+  background-image: url(./assets/Snapchat-78027603.JPG);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.box-details{
+  width: 50%;
+  height: 100%;
+}
+.box-details h4{
+  font-size: 1.75rem;
+}
+@media (max-width:800px) {
+  #myName{
+    font-size: 3.5rem;
+  }
+  .typer{
+    font-size: 2rem;
+  }
+  .about-box{
+    flex-direction: column;
+    align-items: stretch;
+
+  }
+.about-img, .box-details{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.about-img{
+width: 100%;
+height: 50vh;
+margin-bottom: 3.5rem;
+}
+}
+.box-span{
+  color: var(--secondary-text);
+}
