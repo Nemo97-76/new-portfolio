@@ -23,7 +23,7 @@ const Typer=()=>{
     }, []);
     return (
         <div className="typer">
-            I'm <span style={{textDecoration:"underline",textDecorationThickness:"0.15rem",textUnderlineOffset:"8px",textDecorationColor:"#c87573"}} ref={el} />
+            I'm <span ref={el} />
         </div>
     );
 }
@@ -32,7 +32,7 @@ const Typer=()=>{
 const Home=()=>{
     return(
         <>
-        <div className="home">
+        <div className="home" id="home">
 <Box className="homeBox" >
     <Typography id="myName" level="h1">
         Tasneem Youssef

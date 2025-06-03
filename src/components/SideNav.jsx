@@ -8,12 +8,27 @@ import "../App.css"
 const SideNav = () => {
     return(
         <Box className="side-nav">
+<a href="#home">
 <Button startDecorator={<HomeSharpIcon/>} className="navBTN"><span className="navBTN-text">Home</span></Button>
+    </a> 
+
+<a href="#about">
 <Button startDecorator={<PersonSharpIcon/>} className="navBTN"><span className="navBTN-text">About</span></Button>
+</a>
+
+<a href="#skills">
 <Button startDecorator={<InsertDriveFileSharpIcon/>} className="navBTN"><span className="navBTN-text">Resume</span></Button>
+</a>
+
+<a href="#portfolio">
 <Button startDecorator={<CollectionsSharpIcon/>} className="navBTN"><span className="navBTN-text">Portfolio</span></Button>
+</a>
+
+
+<a href="#contact">
 <Button startDecorator={<MailSharpIcon/>} className="navBTN"><span className="navBTN-text">Contact</span></Button>
+</a>
         </Box>
     )
 }
-export default SideNav
+export default SideNav;
