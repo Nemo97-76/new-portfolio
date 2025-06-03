@@ -210,7 +210,7 @@ visibility: visible;
     flex-direction: column;
   }
   .typer{
-    width:65%;
+    width:80%;
   }
   .counters{
     display: grid;
