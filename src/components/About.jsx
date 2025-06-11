@@ -7,7 +7,6 @@ import HeadsetMicRoundedIcon from "@mui/icons-material/HeadsetMicRounded";
 import FolderSpecialRoundedIcon from "@mui/icons-material/FolderSpecialRounded";
 import PeopleRoundedIcon from "@mui/icons-material/PeopleRounded";
 const About = () => {
-  //TODO:"fix email p width in small screen"
   return (
     <div className="about" id="about">
       <Typography variant="h2" className="about-heading">
@@ -226,7 +225,6 @@ const About = () => {
           </Typography>
         </Box>
       </Box>
-
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import "./App.css";
 import About from "./components/About.jsx";
 import Home from "./components/Home.jsx";
@@ -10,7 +11,7 @@ const App = () => {
       <Home />
       <About />
       <Skills />
-    </>
+  </>
   );
 };
 
