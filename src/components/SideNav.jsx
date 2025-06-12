@@ -20,7 +20,7 @@ const SideNav = () => {
         </Button>
       </a>
 
-      <a href="#skills">
+      <a href="#Resume">
         <Button
           startDecorator={<InsertDriveFileSharpIcon />}
           className="navBTN"
