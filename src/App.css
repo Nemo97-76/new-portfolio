@@ -37,7 +37,6 @@ scroll-padding: 2rem;
 
 .navBTN {
   font-weight: 300 !important;
-  width: 50px;
   background-color: var(--color4) !important;
   color: var(--secondary-text) !important;
   overflow: hidden !important;
@@ -149,7 +148,7 @@ scroll-padding: 2rem;
 }
 
 
-.about-span {
+.about-span ,.resume-brief{
   color: var(--secondary-text);
   width: 80%;
   margin: 0 auto !important;
@@ -287,8 +286,81 @@ transform: translate(-50%, -50%);
   background-color: var(--color4) !important;
 }
 /*Resume*/
+.summary-box{
+  width: 80%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+.summary-box h4{
+  color: var(--primary-color);
+}
+.summary-item{
+  border-left:2px solid var(--primary-color);
+  padding-left: 2rem;
+}
+
+
+/*menu*/
+.menu {
+background-color: var(--color4) !important;
+  height: 60px;
+  width: 60px;
+  position: fixed !important;
+  top: 5px;
+  right: 15px;
+  border-radius: 50% !important;  
+  color: var(--secondary-text) !important;
+  display:none !important;
+}
+.menu-icon{
+  font-size: 1.75rem !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*drawer*/
+.drawer-box{
+  width: 255px;
+}
+.drawer-list{
+  margin-top: 50vh !important;
+  transform:translateY(-50%) !important;
+  display:flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: space-evenly !important;
+}
+.listitemBTN{
+width: 220px;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 60px !important;
+  text-transform: none !important;
+  height: 50px !important;
+}
+.listitemBTN:hover{
+  background-color: var(--secoendry) !important;
+  color: white !important;
+}
+
+.listitemicon{
+  color: white !important;
+  margin: 0 -15px 0 50px;
+}
+.drawer h1{
+  font-weight: 700 !important;
+  color: var(--primary-color) !important;
+  font-size: 1.75rem !important;
+  text-align: center !important;
+  margin-top: 1rem !important;
+}
 
 @media (max-width:1070px) {
+  .menu {
+    display: block !important;
+  }
   .linerProgress {
     width:50vw !important;
   }
@@ -353,6 +425,9 @@ height: 100%;
     height: auto;
   }
 
+  .side-nav{
+    display: none;
+  }
   .about-img {
     width: 100%;
     height: 50vh;

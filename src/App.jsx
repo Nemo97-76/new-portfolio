@@ -1,10 +1,10 @@
-import { Typography } from "@mui/material";
 import "./App.css";
 import About from "./components/About.jsx";
 import Home from "./components/Home.jsx";
 import SideNav from "./components/SideNav.jsx";
 import Skills from "./components/Skills.jsx";
 import Resume from "./components/Resume.jsx";
+import ListMenu from "./components/menu.jsx";
 const App = () => {
   return (
     <>
@@ -13,6 +13,7 @@ const App = () => {
       <About />
       <Skills />
       <Resume />
+      <ListMenu />
   </>
   );
 };
