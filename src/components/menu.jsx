@@ -18,7 +18,7 @@ import InsertDriveFileSharpIcon from "@mui/icons-material/InsertDriveFileSharp";
 import CollectionsSharpIcon from "@mui/icons-material/CollectionsSharp";
 import MailSharpIcon from "@mui/icons-material/MailSharp";
 const ListMenu = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const DrawerList = (
     <Box className="drawer-box">
