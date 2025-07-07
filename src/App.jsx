@@ -5,6 +5,8 @@ import SideNav from "./components/SideNav.jsx";
 import Skills from "./components/Skills.jsx";
 import Resume from "./components/Resume.jsx";
 import ListMenu from "./components/menu.jsx";
+import Portfolio from "./components/Portfolio.jsx";
+import BackToTop from "./components/BackToTop.jsx";
 const App = () => {
   return (
     <>
@@ -14,6 +16,8 @@ const App = () => {
       <Skills />
       <Resume />
       <ListMenu />
+      <Portfolio />
+      <BackToTop />
   </>
   );
 };

@@ -13,8 +13,13 @@ scroll-padding: 2rem;
 }
 
 :root {
-  --primary-color: #C87573;
-  --secoendry: #ef6367;
+--secoendry: #ef6367;
+--color2:#8f4f4e;
+--colour3:#a35f5d;
+--color1:#C87573;
+--colour4:#db8c8a;
+--color5:#e9a7a5;
+
   --color3: #fff5f2;
   --color4: #f3eed9;
   --secondary-text: #45505b;
@@ -62,7 +67,7 @@ scroll-padding: 2rem;
 }
 
 .navBTN:hover {
-  background-color: var(--primary-color) !important;
+  background-color: var(--color1) !important;
   color: white !important;
   float: left !important;
   width: 120px !important;
@@ -125,7 +130,7 @@ scroll-padding: 2rem;
   text-decoration: underline;
   text-decoration-thickness: 0.15rem;
   text-underline-offset: 8px;
-  text-decoration-color: var(--primary-color);
+  text-decoration-color: var(--color1);
 }
 
 /*about*/
@@ -140,9 +145,10 @@ scroll-padding: 2rem;
 
 .about h2,
 .skills h2,
-.Resume h2
+.Resume h2,
+.portfolio h2
 {
-  color: var(--primary-color);
+  color: var(--color1);
   font-size: 3rem;
   text-align: center;
 }
@@ -203,6 +209,7 @@ scroll-padding: 2rem;
 .details-span {
   width: 80% !important;
   margin: auto !important;
+  color: var(--secondary-text);
 }
 
 .counters {
@@ -282,10 +289,14 @@ transform: translate(-50%, -50%);
 }
 
 .linerProgress {
-  color:var(--primary-color) !important;
+  color:var(--color1) !important;
   background-color: var(--color4) !important;
 }
 /*Resume*/
+
+.Resume{
+  margin:5rem auto;
+}
 .summary-box{
   width: 80%;
   margin:auto;
@@ -293,16 +304,28 @@ transform: translate(-50%, -50%);
   flex-direction: column;
 }
 .summary-box h4{
-  color: var(--primary-color);
+  color: var(--color1);
+  font-size: 2rem;
 }
 .summary-item{
-  border-left:2px solid var(--primary-color);
+  border-left:3.5px solid var(--color1);
   padding-left: 2rem;
+  margin-bottom:3vh ;
+}
+.summary-list{
+  font-size: 1rem !important;
+  color: var(--secondary-text);
+  padding: 5px 0;
+}
+.summary-title{
+  font-weight: 400 !important;
+  font-size: 1.55rem !important;
+  color: var(--colour4) !important;
+  
 }
 
-
 /*menu*/
-.menu {
+.menu{
 background-color: var(--color4) !important;
   height: 60px;
   width: 60px;
@@ -312,6 +335,11 @@ background-color: var(--color4) !important;
   border-radius: 50% !important;  
   color: var(--secondary-text) !important;
   display:none !important;
+  transition: all 0.3s ease !important;
+}
+.menu:hover{
+background-color: var(--colour4) !important;
+  color: white !important;
 }
 .menu-icon{
   font-size: 1.75rem !important;
@@ -334,7 +362,7 @@ background-color: var(--color4) !important;
 }
 .listitemBTN{
 width: 220px;
-  background-color: var(--primary-color) !important;
+  background-color: var(--color1) !important;
   color: white !important;
   border-radius: 60px !important;
   text-transform: none !important;
@@ -351,18 +379,53 @@ width: 220px;
 }
 .drawer h1{
   font-weight: 700 !important;
-  color: var(--primary-color) !important;
+  color: var(--color1) !important;
   font-size: 1.75rem !important;
   text-align: center !important;
   margin-top: 1rem !important;
 }
+/*backtotop*/
+.back-to-top{
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--color4) !important;
+  color: var(--secondary-text) !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+}
+.back-to-top:hover {
+  background-color: var(--colour4) !important;
+  color: white !important;
+}
 
+/*portfolio*/
+.portfolio {
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 @media (max-width:1070px) {
+  .summary-item{
+    width:80%;
+  }
+  .summary-box {
+    display: grid;
+    grid-template-columns: repeat(2, 0.75fr);
+  }
   .menu {
     display: block !important;
   }
   .linerProgress {
-    width:50vw !important;
+    width:80vw !important;
   }
   .skills-container {
     flex-direction: column;

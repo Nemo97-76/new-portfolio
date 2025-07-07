@@ -82,7 +82,7 @@ const ListMenu = () => {
   );
   return (
     <>
-      <Button className="menu" onClick={() => setSidebarOpen(!sidebarOpen)}>
+      <Button className={sidebarOpen? "open menu" : "closed menu"} onClick={() => setSidebarOpen(!sidebarOpen)}>
         {sidebarOpen ? (
           <CloseRoundedIcon className="menu-icon"/>
         ) : (
