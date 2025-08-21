@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Typography} from "@mui/material";
+import NavBar from './SmallNavBar.jsx';
 const Portfolio = () => {
     return (
         <div className="portfolio" id="portfolio">
@@ -13,6 +14,7 @@ const Portfolio = () => {
                               ratione a neque voluptatibus quidem ullam rerum saepe voluptatem,
                               consequatur incidunt error!
                             </Typography>
+      <NavBar />
               
         </div>
     )

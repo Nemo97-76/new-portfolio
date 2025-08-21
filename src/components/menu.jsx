@@ -25,7 +25,7 @@ const ListMenu = () => {
       <List className="drawer-list">
         <ListItem>
           <a href="#home">
-            <Button className="listitemBTN">
+            <Button onClick={()=>{setSidebarOpen(false)}} className="listitemBTN">
               <ListItemIcon>
                 <HomeSharpIcon className="listitemicon" />
               </ListItemIcon>
@@ -36,7 +36,7 @@ const ListMenu = () => {
 
         <ListItem>
           <a href="#about">
-            <Button className="listitemBTN">
+            <Button onClick={()=>{setSidebarOpen(false)}} className="listitemBTN">
               <ListItemIcon>
                 <PersonSharpIcon className="listitemicon" />
               </ListItemIcon>
@@ -47,7 +47,7 @@ const ListMenu = () => {
 
         <ListItem>
           <a href="#Resume">
-            <Button className="listitemBTN">
+            <Button onClick={()=>{setSidebarOpen(false)}} className="listitemBTN">
               <ListItemIcon>
                 <InsertDriveFileSharpIcon className="listitemicon" />
               </ListItemIcon>
@@ -58,7 +58,7 @@ const ListMenu = () => {
 
         <ListItem>
           <a href="#portfolio">
-            <Button className="listitemBTN">
+            <Button onClick={()=>{setSidebarOpen(false)}} className="listitemBTN">
               <ListItemIcon>
                 <CollectionsSharpIcon className="listitemicon" />
               </ListItemIcon>
@@ -69,7 +69,7 @@ const ListMenu = () => {
 
         <ListItem>
           <a href="#contact">
-            <Button className="listitemBTN">
+            <Button onClick={()=>{setSidebarOpen(false)}} className="listitemBTN">
               <ListItemIcon>
                 <MailSharpIcon className="listitemicon" />
               </ListItemIcon>
@@ -83,13 +83,10 @@ const ListMenu = () => {
   return (
     <>
       <Button className={sidebarOpen? "open menu" : "closed menu"} onClick={() => setSidebarOpen(!sidebarOpen)}>
-        {sidebarOpen ? (
-          <CloseRoundedIcon className="menu-icon"/>
-        ) : (
           <MenuRoundedIcon className="menu-icon"/>
-        )}
       </Button>
       <Drawer
+        anchor="right"
         className="drawer"
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
