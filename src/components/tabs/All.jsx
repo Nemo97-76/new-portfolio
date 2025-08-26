@@ -10,7 +10,7 @@ import img8 from '../../assets/8   61c6f546-f97b-44b9-9d98-afcba2f44f98.png'
 import img9 from '../../assets/9 Transform your living room into an urban oasis….png'
 const All = () => {
     return(
-        <div className="All">
+        <div className="All tab">
 <div  className="All1 grid-item">
 <div className="grid-item-text">
     <h3>text</h3>
