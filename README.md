@@ -69,4 +69,4 @@ View the portfolio here
 ----
 ## Contact
 - **Email**: tasneemyoussef61@gmail.com
-- **LinkedIn**: (https://www.linkedin.com/in/Nemo97-76) 
+- **LinkedIn**: https://www.linkedin.com/in/Nemo97-76
