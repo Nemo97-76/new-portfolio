@@ -7,6 +7,7 @@ import Resume from "./components/Resume.jsx";
 import ListMenu from "./components/menu.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import BackToTop from "./components/BackToTop.jsx";
+import Services from "./components/services.jsx";
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
       <Resume />
       <ListMenu />
       <Portfolio />
+      <Services />
       <BackToTop />
   </>
   );

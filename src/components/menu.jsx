@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import "../App.css";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import ClearRoundedIcon from '@mui/icons-material/ClearRounded';
 import { useState } from "react";
 import HomeSharpIcon from "@mui/icons-material/HomeSharp";
 import PersonSharpIcon from "@mui/icons-material/PersonSharp";
@@ -22,6 +22,9 @@ const ListMenu = () => {
 
   const DrawerList = (
     <Box className="drawer-box">
+      <Button  onClick={() => setSidebarOpen(false)} className="menu">
+          <ClearRoundedIcon className="menu-icon"/>
+      </Button>
       <List className="drawer-list">
         <ListItem>
           <a href="#home">
@@ -82,7 +85,7 @@ const ListMenu = () => {
   );
   return (
     <>
-      <Button className={sidebarOpen? "open menu" : "closed menu"} onClick={() => setSidebarOpen(!sidebarOpen)}>
+      <Button className="menu" onClick={() => setSidebarOpen(!sidebarOpen)}>
           <MenuRoundedIcon className="menu-icon"/>
       </Button>
       <Drawer
